@@ -78,5 +78,4 @@ void draw() {
     }
     break;
   }
-  println(r, g, b, x, y);
 }
