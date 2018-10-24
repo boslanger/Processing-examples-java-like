@@ -1,3 +1,7 @@
+// A circle that bounces similar to the pong game. 
+// TODO: add a circle class and make 4 or 5 on the screen
+// TODO: make the circles bounce off of eachother and maybe change colors when they do.
+
 int x, y, d; 
 float px, py, angle, speed;
 boolean left = true;
