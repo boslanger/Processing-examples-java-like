@@ -1,8 +1,10 @@
 class Star {
+  // variable set for x, y coordinates and z map
   float x;
   float y;
   float z;
   float speed;
+  //variable set to color the 'planet'
   float r;
   float g;
   float b;
@@ -14,7 +16,8 @@ class Star {
     speed = 15;
   }
 
-  void update() {   
+  void update() { 
+  // moves the star across the screen
     z = z-speed;
     if (z < 1) {
       z = width;
@@ -27,6 +30,7 @@ class Star {
   }
 
   void show() {
+  // creates the star object center screen
     fill(random(150, 255));
     noStroke();
     float sx = map(x/z, 0, 1, 0, width);
@@ -36,6 +40,7 @@ class Star {
   }
 
   void ShowPlanet() {
+  // called to make a 'planet' type star
     fill(r, g, b);
     noStroke();
     float sx = map(x/z, 0, 1, 0, width);
