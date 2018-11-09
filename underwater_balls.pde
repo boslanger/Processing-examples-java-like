@@ -12,6 +12,7 @@ void setup() {
 };
 
 void draw() {
+  // draws the bubble to the screen and move its vertically
   background(1, 128, 183);
   for (int i = 0; i < balls.length; i++) {
 
@@ -25,14 +26,15 @@ void draw() {
   }
 }
 
+
+
+
+
 //void checkHit() {
 //  float deltaX = balls.x[1] - balls.x[0];
 //  float deltaY = balls.y[1] - balls.y[0];
 //  float distance = sqrt(deltaX * deltaX + deltaY * deltaY);
 //}
-
-
-
 
 
 
