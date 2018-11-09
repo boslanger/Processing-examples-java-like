@@ -1,7 +1,9 @@
+// global variable set for x, y location and r,g,b color values
 int x, y, r, g, b;
 
 
 void setup() {
+// starts the 'bug' in the middle of the screen and grey.
   size(1200, 800);
   background(151);
   x = width/2;
