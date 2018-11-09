@@ -1,4 +1,5 @@
 class Bubble {
+  //variable set for the bubble class.
   float x = random(width);
   float y = height + random(25, 1000);
 
@@ -9,12 +10,14 @@ class Bubble {
 
 
   void show() {
+  // shows the bubble on the screen
     noStroke();
     fill(200, 200);
     ellipse(x, y, rad*.3, rad);
   }
 
   void move() {
+  // moves the bubble up and resets the bubble when it hits the top
     y = y - speed;
     if (y < 0) {
       y = height + random(25, 1000);
