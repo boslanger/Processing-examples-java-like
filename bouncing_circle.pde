@@ -1,9 +1,13 @@
-// A circle that bounces similar to the pong game. 
-// TODO: add a circle class and make 4 or 5 on the screen
-// TODO: make the circles bounce off of eachother and maybe change colors when they do.
+// A circle that bounces similar to the pong game or the old screen saver
 
+
+// variable set to hold the x,y values and diameter
 int x, y, d; 
+
+// variable set to hold the values of the 'rope' connected to the ball
 float px, py, angle, speed;
+
+// boolean switches to help with movement
 boolean left = true;
 boolean down = true;
 
@@ -22,6 +26,7 @@ void draw() {
   ellipse(x, y, d/2, d/2);
   strokeWeight(4);
 
+  // Four points to connect the rope to the side of the screen just to see if I can do it.
   // point1
   px = x + (d/4 * cos(angle + PI));
   py = y + (d/4 * sin(angle + PI));
@@ -70,7 +75,7 @@ void move_horizontally() {
     angle += speed;
   }
   
-  // Flags for horizontal movement
+  // Changes the flags  for horizontal movement
   if (x < 0) {
     left = false;
   }
@@ -88,7 +93,7 @@ void move_vertically() {
     y += 1;
   }
 
-  // Flags for vertical movement
+  // Changes the flags for vertical movement
   if (y < 0) {
     down = false;
   }
