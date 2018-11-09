@@ -11,8 +11,10 @@ void setup() {
 void draw() {
   background(0);
   translate(width/2, height/2);
+  // loop that draws the stars
   for (int i = 0; i < stars.length; i++) {
     if (i % 250 == 0) {
+    // colors one star to make a 'planet'
       stars[i].ShowPlanet(); 
       stars[i].update();
     } else {
